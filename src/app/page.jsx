@@ -1,26 +1,24 @@
 import HomeHeader from "@/components/HomeHeader";
-import Image from "next/image";
-import React from "react";
 import HomeSearch from "@/components/HomeSearch";
-const Page = () => {
+import Image from "next/image";
+
+export default function Home() {
   return (
     <>
+      {/* Header */}
       <HomeHeader />
 
-      {/* body
-       */}
+      {/* body */}
 
       <div className="flex flex-col items-center mt-24">
         <Image
           width="300"
-          alt=""
-          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-          height="200"
+          height="100"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/640px-Google_2015_logo.svg.png"
         />
+
         <HomeSearch />
       </div>
     </>
   );
-};
-
-export default Page;
+}
